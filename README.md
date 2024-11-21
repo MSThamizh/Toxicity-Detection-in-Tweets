@@ -1,28 +1,9 @@
 # **Toxicity Detection in Tweets**
 
-## **Project Overview**
-This project implements machine learning models to classify tweets as toxic or non-toxic. The workflow involves advanced **Natural Language Processing (NLP)** techniques for text cleaning, feature extraction using **TF-IDF**, and evaluation of multiple classifiers.
-The system processes tweet data, creates robust machine learning models, and evaluates them using metrics like **classification reports**, **confusion matrices**, and **ROC-AUC curves**, ensuring reliable performance in detecting toxicity.
+This project focuses on detecting toxic tweets using advanced Natural Language Processing (NLP) techniques. The goal is to classify tweets as either toxic or non-toxic, based on the content, to help prevent harmful online communication.
 
-## **Key Features**
-1. **Text Preprocessing**:
-   - Converts text to lowercase, tokenizes words, removes stopwords, punctuation, and lemmatizes tokens for normalization.
-
-2. **Feature Extraction**:
-   - Applies **TF-IDF Vectorization** to represent textual data numerically for machine learning.
-
-3. **Model Training**:
-   - Trains classifiers including:
-     - Decision Tree
-     - Random Forest
-     - Naive Bayes
-     - K-Nearest Neighbors
-
-4. **Performance Evaluation**:
-   - Evaluates models using **classification reports**, **confusion matrices**, and **ROC-AUC** scores for both training and test datasets.
-
-5. **Visualization**:
-   - Plots **ROC curves** for assessing model performance visually.
+## **Problem Statement**
+The task is to build a model that classifies tweets into two categories: toxic and non-toxic. Toxicity is defined as language that is harmful, abusive, or hateful. The model is trained using a dataset of labeled tweets and evaluated using classification metrics.
 
 ## **Workflow**
 
@@ -52,6 +33,26 @@ Each model is evaluated using:
 - **Classification Report**: Precision, recall, F1-score for toxic and non-toxic classes.
 - **Confusion Matrix**: Visual representation of true/false positives and negatives.
 - **ROC Curve & AUC**: Trade-off analysis between true positive and false positive rates.
+
+## **Key Features**
+1. **Text Preprocessing**:
+   - Converts text to lowercase, tokenizes words, removes stopwords, punctuation, and lemmatizes tokens for normalization.
+
+2. **Feature Extraction**:
+   - Applies **TF-IDF Vectorization** to represent textual data numerically for machine learning.
+
+3. **Model Training**:
+   - Trains classifiers including:
+     - Decision Tree
+     - Random Forest
+     - Naive Bayes
+     - K-Nearest Neighbors
+
+4. **Performance Evaluation**:
+   - Evaluates models using **classification reports**, **confusion matrices**, and **ROC-AUC** scores for both training and test datasets.
+
+5. **Visualization**:
+   - Plots **ROC curves** for assessing model performance visually.
 
 ## **Technologies Used**
 - **Python**
