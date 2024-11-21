@@ -4,8 +4,6 @@
 This project implements machine learning models to classify tweets as toxic or non-toxic. The workflow involves advanced **Natural Language Processing (NLP)** techniques for text cleaning, feature extraction using **TF-IDF**, and evaluation of multiple classifiers.
 The system processes tweet data, creates robust machine learning models, and evaluates them using metrics like **classification reports**, **confusion matrices**, and **ROC-AUC curves**, ensuring reliable performance in detecting toxicity.
 
----
-
 ## **Key Features**
 1. **Text Preprocessing**:
    - Converts text to lowercase, tokenizes words, removes stopwords, punctuation, and lemmatizes tokens for normalization.
@@ -25,8 +23,6 @@ The system processes tweet data, creates robust machine learning models, and eva
 
 5. **Visualization**:
    - Plots **ROC curves** for assessing model performance visually.
-
----
 
 ## **Workflow**
 
@@ -57,8 +53,6 @@ Each model is evaluated using:
 - **Confusion Matrix**: Visual representation of true/false positives and negatives.
 - **ROC Curve & AUC**: Trade-off analysis between true positive and false positive rates.
 
----
-
 ## **Technologies Used**
 - **Python**
 - **Libraries**:
@@ -66,8 +60,6 @@ Each model is evaluated using:
   - `nltk` for text preprocessing
   - `sklearn` for machine learning and evaluation
   - `matplotlib` for data visualization
-
----
 
 ## **Results**
 
@@ -85,13 +77,9 @@ Each model is evaluated using:
 - **Confusion Matrices**:
   Evaluate the model's ability to avoid false positives and false negatives.
 
----
-
 ## References
 
 - **Python**: [https://docs.python.org/3/](https://docs.python.org/3/)
 - **NLTK**: [https://www.nltk.org/](https://www.nltk.org/)
 - **Scikit-learn Documentation**: [https://scikit-learn.org/stable/](https://scikit-learn.org/stable/)
-  
----
 
