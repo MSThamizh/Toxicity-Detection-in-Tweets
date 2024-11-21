@@ -2,7 +2,6 @@
 
 ## **Project Overview**
 This project implements machine learning models to classify tweets as toxic or non-toxic. The workflow involves advanced **Natural Language Processing (NLP)** techniques for text cleaning, feature extraction using **TF-IDF**, and evaluation of multiple classifiers.
-
 The system processes tweet data, creates robust machine learning models, and evaluates them using metrics like **classification reports**, **confusion matrices**, and **ROC-AUC curves**, ensuring reliable performance in detecting toxicity.
 
 ---
