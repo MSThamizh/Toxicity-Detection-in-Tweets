@@ -5,62 +5,45 @@ This project focuses on detecting toxic tweets using advanced Natural Language P
 ## **Problem Statement**
 The task is to build a model that classifies tweets into two categories: toxic and non-toxic. Toxicity is defined as language that is harmful, abusive, or hateful. The model is trained using a dataset of labeled tweets and evaluated using classification metrics.
 
-## **Workflow**
+## Workflow
 
-### **1. Data Understanding**
-The dataset contains:
-- **tweet**: Text content of the tweet.
-- **Toxicity**: Binary label (1 = toxic, 0 = non-toxic).
+1. **Data Collection**: The dataset consists of labeled tweets, where each tweet is classified as either toxic or non-toxic.
+2. **Data Preprocessing**: Text data is cleaned and preprocessed by:
+   - Removing special characters, URLs, and stopwords.
+   - Tokenizing text and lemmatizing words.
+3. **Feature Extraction**: 
+   - Used **TF-IDF vectorization** to convert the text data into numerical features for the machine learning models.
+4. **Model Training**: 
+   - Trained multiple machine learning classifiers like **Logistic Regression**, **Random Forest**, and **SVM**.
+   - Hyperparameter tuning was performed for better model accuracy.
+5. **Model Evaluation**: 
+   - Evaluated models using metrics such as **Accuracy**, **Precision**, **Recall**, **F1-Score**, and **ROC-AUC**.
+6. **Prediction**: 
+   - The model predicts whether a given tweet is toxic or non-toxic.
 
-### **2. Data Preprocessing**
-The raw text data undergoes:
-- Lowercasing, punctuation removal, tokenization.
-- Stopwords removal using NLTK's English stopword list.
-- Lemmatization with NLTK's WordNet lemmatizer.
+## Features
 
-### **3. Feature Extraction**
-Textual data is converted into numerical vectors using the **TF-IDF (Term Frequency-Inverse Document Frequency)** technique, enabling machine learning models to process text efficiently.
+- **Text Preprocessing**: 
+  - Removal of special characters, URLs, and non-alphabetic characters.
+  - Tokenization and lemmatization for better feature extraction.
+  
+- **TF-IDF Vectorization**: 
+  - Convert text data into numerical features using Term Frequency-Inverse Document Frequency (TF-IDF).
+  
+- **Model Training & Evaluation**:
+  - Multiple models are trained, evaluated, and compared based on classification metrics.
 
-### **4. Model Training**
-The dataset is split into training and test sets. The following models are trained and evaluated:
-- **DecisionTreeClassifier**
-- **RandomForestClassifier**
-- **MultinomialNB**
-- **KNeighborsClassifier**
+- **User Interface**: 
+  - User can input a tweet and the model will classify it as toxic or non-toxic.
+  
+## Technologies Used
 
-### **5. Model Evaluation**
-Each model is evaluated using:
-- **Classification Report**: Precision, recall, F1-score for toxic and non-toxic classes.
-- **Confusion Matrix**: Visual representation of true/false positives and negatives.
-- **ROC Curve & AUC**: Trade-off analysis between true positive and false positive rates.
+- **Python**: Primary language for model development.
+- **NLP Libraries**: 
+  - **NLTK** for text preprocessing (tokenization, lemmatization).
+  - **Scikit-learn** for machine learning algorithms and evaluation.
+- **TF-IDF**: For converting text into numerical features.
 
-## **Key Features**
-1. **Text Preprocessing**:
-   - Converts text to lowercase, tokenizes words, removes stopwords, punctuation, and lemmatizes tokens for normalization.
-
-2. **Feature Extraction**:
-   - Applies **TF-IDF Vectorization** to represent textual data numerically for machine learning.
-
-3. **Model Training**:
-   - Trains classifiers including:
-     - Decision Tree
-     - Random Forest
-     - Naive Bayes
-     - K-Nearest Neighbors
-
-4. **Performance Evaluation**:
-   - Evaluates models using **classification reports**, **confusion matrices**, and **ROC-AUC** scores for both training and test datasets.
-
-5. **Visualization**:
-   - Plots **ROC curves** for assessing model performance visually.
-
-## **Technologies Used**
-- **Python**
-- **Libraries**:
-  - `pandas` for data manipulation
-  - `nltk` for text preprocessing
-  - `sklearn` for machine learning and evaluation
-  - `matplotlib` for data visualization
 
 ## **Results**
 
